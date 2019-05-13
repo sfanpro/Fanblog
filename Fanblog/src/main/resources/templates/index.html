@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <meta charset="UTF-8" />
-    <title>Fan Blog</title>
+<head th:replace="layout::site-head">
+    <title >Welcome to the Spring MVC FanBlog</title>
 </head>
 
 <body>
-<h1>Welcome to Fan Blog</h1>
-    Now is: <b th:text="${execInfo.now.time}"></b>
+<header th:replace = "layout::site-header" ></header>
+<h1>Welcome to the Spring MVC FanBlog</h1>
+    Now is: <b th:text="${execInfo.now.time}">Date and time</b>
+ <footer th:replace="layout::site-footer" ></footer>
 </body>
 
-</html>
+</html> 
